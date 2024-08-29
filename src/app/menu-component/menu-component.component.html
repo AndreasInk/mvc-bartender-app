@@ -1,0 +1,13 @@
+<div class="menu-items" *ngIf="menuItems && menuItems.length > 0; else noItems">
+    <h3>Menu Items</h3>
+    <ul>
+      <li class="menu-item" *ngFor="let item of menuItems">
+        <h1>{{ item.title }} {{ item.price }}</h1>
+      </li>
+    </ul>
+  </div>
+  
+  <ng-template #noItems>
+    <p>No menu items.</p>
+  </ng-template>
+  
