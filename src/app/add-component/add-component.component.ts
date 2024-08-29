@@ -2,14 +2,15 @@ import { Component } from '@angular/core';
 import { ManageMenuService } from '../menu-component/menu-component.service';
 import { MenuComponentItem } from '../menu-component/menu-component-item.component';
 import { CommonModule } from '@angular/common';
+
 @Component({
-  selector: 'app-bartender-component',
+  selector: 'app-add-component',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './bartender-component.component.html',
-  styleUrl: './bartender-component.component.css'
+  templateUrl: './add-component.component.html',
+  styleUrl: './add-component.component.css'
 })
-export class BartenderComponentComponent {
+export class AddComponentComponent {
   constructor(service: ManageMenuService) {
     this.service = service
   }
@@ -19,6 +20,6 @@ export class BartenderComponentComponent {
       console.log(items)
     });
   }
-  service: ManageMenuService;
   menuItems: MenuComponentItem[] = [];
+  service: ManageMenuService;
 }

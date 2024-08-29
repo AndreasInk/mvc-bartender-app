@@ -2,6 +2,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { MenuComponentComponent } from './menu-component/menu-component.component';
 import { NgModule } from '@angular/core';
 import { BartenderComponentComponent } from './bartender-component/bartender-component.component';
+import { AddComponentComponent } from './add-component/add-component.component';
+
 export const routes: Routes = [
     {
         path: '',
@@ -17,7 +19,7 @@ export const routes: Routes = [
     },
     {
         path: 'add',
-        component: BartenderComponentComponent
+        component: AddComponentComponent
     }
 ];
 
