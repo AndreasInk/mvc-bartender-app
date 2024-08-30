@@ -3,6 +3,7 @@
     <ul>
       <li class="menu-item" *ngFor="let item of menuItems">
         <h1>{{ item.title }} {{ item.price }}</h1>
+        <button (click)="addToCart(item)">Add to cart</button>
       </li>
     </ul>
   </div>
@@ -10,4 +11,3 @@
   <ng-template #noItems>
     <p>No menu items.</p>
   </ng-template>
-  

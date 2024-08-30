@@ -14,8 +14,11 @@ export class BartenderComponentComponent {
     this.service = service
   }
   ngOnInit(): void {
-     this.service.getAll().subscribe((items) => {
-      this.menuItems = items;
+     this.service.getQueue().subscribe((items) => {
+      items.forEach(id => this.service.getItemByID(id).subscribe((items) => {
+        this.menuItems = items;
+      }));
+
       console.log(items)
     });
   }

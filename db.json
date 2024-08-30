@@ -1,13 +1,5 @@
 {
-  "queue": [
-    {
-      "id": 1,
-      "title": "Mojito",
-      "description": "A refreshing cocktail with white rum, fresh lime juice, mint leaves, sugar, and soda water.",
-      "price": 8.50,
-      "isSpecial": false
-    }
-  ],
+"queue": [1],
 "menuItems": [
     {
       "id": 1,

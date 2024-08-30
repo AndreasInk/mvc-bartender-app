@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MenuComponentItem } from './menu-component-item.component';
 import { CommonModule, NgClass } from '@angular/common';
 import { ManageMenuService } from './menu-component.service';
+
 
 @Component({
   selector: 'app-menu-component',
@@ -22,4 +23,8 @@ export class MenuComponentComponent implements OnInit {
   }
   service: ManageMenuService;
   menuItems: MenuComponentItem[] = [];
+  
+  addToCart(newItem: MenuComponentItem) {
+    this.service.addToQueue(newItem);
+  }
 }

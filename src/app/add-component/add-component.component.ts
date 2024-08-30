@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { ManageMenuService } from '../menu-component/menu-component.service';
 import { MenuComponentItem } from '../menu-component/menu-component-item.component';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-add-component',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './add-component.component.html',
   styleUrl: './add-component.component.css'
 })
